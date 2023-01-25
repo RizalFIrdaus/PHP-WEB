@@ -1,6 +1,7 @@
 <?php
 $title = "PHP WEB";
 $content = "WEB";
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -13,6 +14,11 @@ $content = "WEB";
 </head>
 
 <h1><?= $content ?></h1>
+
+<!-- Php Server Global Server -->
+<?php foreach ($_SERVER as $key => $data) : ?>
+    <p><?= "$key : $data"  ?></p>
+<?php endforeach ?>
 
 <body>
 
