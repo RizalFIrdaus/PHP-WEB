@@ -13,8 +13,9 @@ $title = "Query Parameter";
 </head>
 
 <body>
+    <h1>Hello, <?= $_GET['firstname'] . " " . $_GET['lastname'] ?></h1>
     <?php foreach ($_GET as $key => $value) : ?>
-        <h1><?= "$key : $value" ?></h1>
+        <h3><?= "$key : $value" ?></h3>
     <?php endforeach ?>
 </body>
 
