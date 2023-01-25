@@ -18,8 +18,8 @@
         <input type="text" id=age name="age" value="<?= isset($_POST['age']) ? $_POST['age'] : "" ?>">
         <button type="submit">Send</button>
     </form>
-    <h1>Name: <?= isset($_POST["name"]) ? $_POST["name"] : "" ?></h1>
-    <h1>Age : <?= isset($_POST["age"]) ? $_POST["age"] : "" ?></h1>
+    <h1>Name: <?= isset($_POST["name"]) ? $_POST["name"] : http_response_code(400) ?></h1>
+    <h1>Age : <?= isset($_POST["age"]) ? $_POST["age"] : http_response_code(400) ?></h1>
 </body>
 
 </html>
